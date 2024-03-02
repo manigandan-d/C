@@ -2,7 +2,12 @@
 #include <stdint.h>
 
 int main() {
-    printf("Hey MD\n");
+    char ch;
+    char str[100];
+    scanf("%c", &ch);
+    printf("%c\n", ch);
+    scanf(" %[^\n]s", str);
+    printf("%s\n", str);
 
     return 0;
 }
