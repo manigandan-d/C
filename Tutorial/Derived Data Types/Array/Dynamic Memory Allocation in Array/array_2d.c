@@ -11,13 +11,15 @@ int main()
     printf("\nEnter the number of columns : ");
     scanf("%d", &c);
 
-    int **a = (int **)malloc(r * sizeof(int *));
+    int **a = malloc (r * sizeof(int *));
+    // int **a = (int **)malloc(r * sizeof(int *));
 
     printf("\n");
 
     for(i=0; i<r; i++)
     {
-        a[i] = (int *)malloc(c * sizeof(int));
+        a[i] = malloc(c * sizeof(int));
+        // a[i] = (int *)malloc(c * sizeof(int));
     }
 
     for(i=0; i<r; i++)
