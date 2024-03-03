@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-    char s[] = "C C++ Java Python";
+    char s[] = "C C++ Python Java";
 
     char *tok = strtok(s, " ");
 
@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
         printf("%s\n", tok);
         tok = strtok(NULL, " ");
     }
-
 
     return 0;
 }
